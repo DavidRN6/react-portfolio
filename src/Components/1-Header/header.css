@@ -67,6 +67,7 @@ header button {
   inset: 0;
   z-index: 10;
   background-color: rgba(40, 40, 48, 0.91);
+  backdrop-filter: blur(4px);
 }
 .modal {
   animation: mymove 0.7s 1;
@@ -127,7 +128,6 @@ header button {
   color: var(--title);
   border: 1px solid rgba(244, 165, 96);
 }
-
 
 
 .close {
