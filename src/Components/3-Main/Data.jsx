@@ -2,7 +2,7 @@ export default [
   {
     id: 1,
     name: "Shopsy",
-    info: "HTML, CSS, JavaScript, React. Responsive in any device. it is important for me to visit website and tell me your opinion",
+    info: "HTML, CSS, JavaScript, React. Responsive on any device. it is important for me to visit website and tell me your opinion",
     image: "Shopsy.png",
     link: "https://davidrn6.github.io/Shopsy/",
   },
