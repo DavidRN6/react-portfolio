@@ -30,8 +30,8 @@
   line-height: 1.6rem;
 }
 .contact div {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 /* ==========
@@ -112,13 +112,13 @@
     align-self: center;
   }
 
-  .animation {
+  .contact .field div:last-child {
     display: none;
   }
 }
 @media (min-width: 701px) and (max-width: 1200px) {
-    #email,
-#message {
-  width: 16rem;
-}
+  #email,
+  #message {
+    width: 16rem;
+  }
 }
