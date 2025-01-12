@@ -2,6 +2,7 @@ export default [
   {
     id: 1,
     name: "Shopsy",
+    category: "react",
     info: "HTML, CSS, JavaScript, React. Responsive on any device. it is important for me to visit website and tell me your opinion",
     image: "Shopsy.png",
     link: "https://davidrn6.github.io/Shopsy/",
@@ -9,6 +10,7 @@ export default [
   {
     id: 2,
     name: "CRUDS",
+    category: "css",
     info: "With this program you can add your products or goods with their price, taxes, discount and count then it gives you the total price for the product.",
     image: "CRUDS.png",
     link: "https://davidrn6.github.io/CRUDS/",
@@ -16,6 +18,7 @@ export default [
   {
     id: 3,
     name: "Portfolio (old)",
+    category: "javascript",
     info: "It is portfolio for me, I have used HTML, CSS and JavaScript. It contains information about me and the projects I have done.",
     image: "Old-Portfolio.png",
     link: "https://davidrn6.github.io/Portfolio/",
@@ -23,6 +26,7 @@ export default [
   {
     id: 4,
     name: "Iphone",
+    category: "javascript",
     info: "Displaying iPhone categories with different phone colors. when you select a specific phone color, the entire website design adapts to match it.",
     image: "Iphone.png",
     link: "https://davidrn6.github.io/Iphone-project/",
@@ -30,6 +34,7 @@ export default [
   {
     id: 5,
     name: "XO Game",
+    category: "javascript",
     info: "Of course, you know this game. A simple game using Javascript, and at the end of the turn, whether someone wins or draw, the page reloads.",
     image: "XO Game.png",
     link: "https://davidrn6.github.io/XO-Game/",
