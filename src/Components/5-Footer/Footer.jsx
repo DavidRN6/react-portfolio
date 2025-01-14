@@ -11,7 +11,7 @@ function Footer() {
           <a href="">Projects</a>
         </li>
         <li>
-          <a href="">Speaking</a>
+          <a href="">Skills</a>
         </li>
         <li>
           <a href="">Uses</a>
