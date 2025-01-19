@@ -36,14 +36,14 @@ main {
   transition: 0.3s;
   opacity: 0.8;
 }
-.list button:hover {
-  opacity: 1;
-}
 .active {
   border: 1px solid var(--blue);
   font-weight: bold;
   letter-spacing: 0.6px;
   font-size: 1.25rem;
+}
+.light .active {
+  border: 1px solid darkorange;
 }
 
 /* ============
@@ -63,11 +63,17 @@ main {
   transition: 0.3s;
   background: var(--bgHeader);
 }
+.light .card {
+  box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.45);
+}
 .card:hover {
   border: 1px solid var(--blue);
   rotate: 1deg;
   scale: 1.01;
-  box-shadow: 0 0 30px rgba(128, 128, 128, 0.63);
+  box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.7);
+}
+.light .card:hover {
+  border: 1px solid darkorange;
 }
 
 .card img {

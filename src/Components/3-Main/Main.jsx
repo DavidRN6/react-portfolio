@@ -2,6 +2,7 @@ import { useState } from "react";
 import { myProject } from "./MyProject";
 import "./main.css";
 import { FaLink, FaGithub, FaArrowRight } from "react-icons/fa";
+import { AnimatePresence, motion } from "framer-motion";
 
 function Main() {
   const [isActive, setIsActive] = useState("all");
@@ -62,10 +63,17 @@ function Main() {
       </section>
 
       <section className="project">
-        {arr.map((item) => {
+        <AnimatePresence>
+          {arr.map((item) => {
           return (
-            <article key={item.id} className="card">
-              <img src={item.image} alt="" />
+            <motion.article
+            
+            layout
+            initial={{ transform: "scale(0)" }}
+            animate={{ transform: "scale(1)" }}
+            transition={{ duration: 0.5 }}
+            key={item.id} className="card">
+              <img loading="lazy" src={item.image} alt="" />
 
               <div className="box">
                 <h1 className="name">{item.name}</h1>
@@ -88,9 +96,10 @@ function Main() {
                   </a>
                 </div>
               </div>
-            </article>
+            </motion.article>
           );
-        })}
+          })}
+        </AnimatePresence>
       </section>
     </main>
   );

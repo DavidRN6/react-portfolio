@@ -1,15 +1,25 @@
 import "./header.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaRegMoon } from "react-icons/fa";
 import { IoCloseSharp, IoMenu } from "react-icons/io5";
+import { MdOutlineLightMode } from "react-icons/md";
 
 function Header() {
-
   const [showModal, setShowModal] = useState(false);
+  const [theme, setTheme] = useState("dark");
+
+  useEffect(() => {
+    if (theme === "light") {
+      document.body.classList.remove("dark");
+      document.body.classList.add("light");
+    } else {
+      document.body.classList.remove("light");
+      document.body.classList.add("dark");
+    }
+  }, [theme]);
 
   return (
     <header className="flex">
-      
       <button
         onClick={() => {
           setShowModal(true);
@@ -40,10 +50,20 @@ function Header() {
         </ul>
       </nav>
 
-      <button >
-        <span className="icon">
-        <FaRegMoon />
-        </span>
+      <button
+        onClick={() => {
+          setTheme(theme === "light" ? "dark" : "light");
+        }}
+      >
+        {theme === "light" ? (
+          <span className="icon sun">
+            <MdOutlineLightMode />
+          </span>
+        ) : (
+          <span className="icon">
+            <FaRegMoon />
+          </span>
+        )}
       </button>
 
       {showModal && (
@@ -57,7 +77,7 @@ function Header() {
                 }}
               >
                 <span>
-                <IoCloseSharp />
+                  <IoCloseSharp />
                 </span>
               </button>
             </li>

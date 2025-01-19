@@ -123,12 +123,15 @@ header button {
   border-radius: 50%;
   color: var(--subtitle);
   transition: 0.2s;
+  box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.45);
 }
 .icon:hover {
   color: var(--title);
   border: 1px solid rgba(244, 165, 96);
 }
-
+.sun {
+  color: rgb(255, 165, 0);
+}
 
 .close {
   font-size: 1.5rem;

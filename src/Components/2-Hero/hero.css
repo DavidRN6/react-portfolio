@@ -58,3 +58,14 @@
 /* ===============================
   2. Right Section ==> Animation
 ==================================*/
+
+.hero .animation {
+  width: 100%;
+  translate: 100px 55px;
+}
+
+@media (max-width: 1250px) {
+  .animation {
+    display: none;
+  }
+}
