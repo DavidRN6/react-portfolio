@@ -66,11 +66,6 @@ function Hero() {
           </a>
         </div>
 
-        <div className="cv">
-          <a href="CV.pdf" download>
-            Download CV
-          </a>
-        </div>
       </div>
 
       <div className="right-section animation">
