@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <div className="left-section">
         <div className="profile">
           <motion.img
@@ -63,6 +63,12 @@ function Hero() {
             className="social"
           >
             <FaLinkedin />
+          </a>
+        </div>
+
+        <div className="cv">
+          <a href="CV.pdf" download>
+            Download CV
           </a>
         </div>
       </div>

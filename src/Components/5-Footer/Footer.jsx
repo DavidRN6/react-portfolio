@@ -1,6 +1,10 @@
 import "./footer.css";
 
 function Footer() {
+  const scrollToSection = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <footer>
       <ul className="footer-links">
@@ -8,7 +12,7 @@ function Footer() {
           <a href="">About</a>
         </li>
         <li>
-          <a href="">Projects</a>
+          <a onClick={() => scrollToSection("projects")}>Projects</a>
         </li>
         <li>
           <a href="">Skills</a>

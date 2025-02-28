@@ -6,6 +6,7 @@ export const myProject = [
     info: "HTML, CSS, JavaScript, React. Responsive on any device. it is important for me to visit website and tell me your opinion",
     image: "Shopsy.png",
     link: "https://davidrn6.github.io/Shopsy/",
+    code: "https://github.com/DavidRN6/Shopsy",
     allProjects: true,
   },
   {
@@ -15,6 +16,7 @@ export const myProject = [
     info: "This website is simple and calm, but I love this project very much in terms of design and colors, and everything.",
     image: "My Travel Journal.png",
     link: "https://davidrn6.github.io/my-travel-journal/",
+    code: "https://github.com/DavidRN6/my-travel-journal",
     allProjects: true,
   },
   {
@@ -24,6 +26,7 @@ export const myProject = [
     info: "It is portfolio for me, I have used HTML, CSS and JavaScript. It contains information about me and the projects I have done.",
     image: "Old-Portfolio.png",
     link: "https://davidrn6.github.io/Portfolio/",
+    code: "https://github.com/DavidRN6/Portfolio",
     allProjects: true,
   },
   {
@@ -33,6 +36,7 @@ export const myProject = [
     info: "With this program you can add your products or goods with their price, taxes, discount and count then it gives you the total price for the product.",
     image: "CRUDS.png",
     link: "https://davidrn6.github.io/CRUDS/",
+    code: "https://github.com/DavidRN6/CRUDS",
     allProjects: true,
   },
   {
@@ -42,6 +46,7 @@ export const myProject = [
     info: "Displaying iPhone categories with different phone colors. when you select a specific phone color, the entire website design adapts to match it.",
     image: "Iphone.png",
     link: "https://davidrn6.github.io/Iphone-project/",
+    code: "https://github.com/DavidRN6/Iphone-project",
     allProjects: true,
   },
   {
@@ -51,6 +56,7 @@ export const myProject = [
     info: "Of course, you know this game. A simple game using Javascript, and at the end of the turn, whether someone wins or draw, the page reloads.",
     image: "XO Game.png",
     link: "https://davidrn6.github.io/XO-Game/",
+    code: "https://github.com/DavidRN6/XO-Game",
     allProjects: true,
   },
   {
@@ -60,6 +66,7 @@ export const myProject = [
     info: "It was just practice for me to use Bootstrap. The website is simple and not complicated at all.",      
     image: "Silencer.png",
     link: "https://davidrn6.github.io/bootstrap-project/",
+    code: "https://github.com/DavidRN6/bootstrap-project",
     allProjects: true,
   },
   {
@@ -69,6 +76,7 @@ export const myProject = [
     info: "It was a significant achievement for me because it was my first project using only HTML and CSS. Unfortunately, it is not responsive.",      
     image: "adidas.png",
     link: "https://davidrn6.github.io/Adidas/",
+    code: "https://github.com/DavidRN6/Adidas",
     allProjects: true,
   },
 ];

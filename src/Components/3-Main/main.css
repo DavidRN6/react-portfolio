@@ -70,7 +70,6 @@ main {
   border: 1px solid var(--blue);
   rotate: 1deg;
   scale: 1.01;
-  box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.7);
 }
 .light .card:hover {
   border: 1px solid darkorange;

@@ -1,22 +1,16 @@
 import "./header.css";
-import { useEffect, useState } from "react";
-import { FaRegMoon } from "react-icons/fa";
+import { useState } from "react";
 import { IoCloseSharp, IoMenu } from "react-icons/io5";
-import { MdOutlineLightMode } from "react-icons/md";
+import DarkMode from "./DarkMode";
 
 function Header() {
   const [showModal, setShowModal] = useState(false);
-  const [theme, setTheme] = useState("dark");
 
-  useEffect(() => {
-    if (theme === "light") {
-      document.body.classList.remove("dark");
-      document.body.classList.add("light");
-    } else {
-      document.body.classList.remove("light");
-      document.body.classList.add("dark");
-    }
-  }, [theme]);
+  const scrollToSection = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+
+    setShowModal(false);
+  };
 
   return (
     <header className="flex">
@@ -39,32 +33,18 @@ function Header() {
             <a href="">About</a>
           </li>
           <li>
-            <a href="">Projects</a>
+            <a onClick={() => scrollToSection("projects")}>Projects</a>
           </li>
           <li>
             <a href="">Skills</a>
           </li>
           <li>
-            <a href="">Contact</a>
+            <a onClick={() => scrollToSection("contact")}>Contact</a>
           </li>
         </ul>
       </nav>
 
-      <button
-        onClick={() => {
-          setTheme(theme === "light" ? "dark" : "light");
-        }}
-      >
-        {theme === "light" ? (
-          <span className="icon sun">
-            <MdOutlineLightMode />
-          </span>
-        ) : (
-          <span className="icon">
-            <FaRegMoon />
-          </span>
-        )}
-      </button>
+      <DarkMode />
 
       {showModal && (
         <div className="pop">
@@ -85,13 +65,13 @@ function Header() {
               <a href="">About</a>
             </li>
             <li>
-              <a href="">Projects</a>
+              <a onClick={() => scrollToSection("projects")}>Projects</a>
             </li>
             <li>
               <a href="">Skills</a>
             </li>
             <li>
-              <a href="">Contact</a>
+              <a onClick={() => scrollToSection("contact")}>Contact</a>
             </li>
           </ul>
         </div>

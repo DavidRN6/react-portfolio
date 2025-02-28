@@ -20,7 +20,7 @@ function Main() {
   };
 
   return (
-    <main>
+    <main id="projects">
       <section className="list">
         <button
           // active class
@@ -83,7 +83,7 @@ function Main() {
                     <a href={item.link} target="_blank">
                       <FaLink />
                     </a>
-                    <a href="">
+                    <a href={item.code} target="_blank">
                       <FaGithub />
                     </a>
                   </div>

@@ -10,7 +10,7 @@ function Contact() {
   const [state, handleSubmit] = useForm("mzzzlrvw");
 
   return (
-    <section className="contact">
+    <section className="contact" id="contact">
       <h1 className="title">
         <span className="email-icon">
           <MdEmail />

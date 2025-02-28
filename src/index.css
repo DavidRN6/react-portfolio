@@ -85,10 +85,14 @@ a {
   text-decoration: none;
   color: initial;
   transition: 0.2s;
+  cursor: pointer;
 }
 .flex {
   display: flex;
   align-items: center;
+}
+.link {
+  cursor: pointer;
 }
 
 button {
